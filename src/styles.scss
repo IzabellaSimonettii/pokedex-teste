@@ -1,5 +1,5 @@
 // Packages
-// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 // @import "~bootstrap/scss/bootstrap-grid.scss";
 // @import "~bootstrap/scss/bootstrap.scss";
 // Utils
@@ -9,5 +9,6 @@
 @import "assets/scss/reset.scss";
 @import "assets/scss/helpers.scss";
 // Components
-
+@import "assets/scss/mat-spinner";
+@import "assets/scss/pokemon-detail"
 // Pages

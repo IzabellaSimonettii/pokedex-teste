@@ -1,0 +1,24 @@
+<figure>
+  <img src="./../../../../../../../assets/images/temp.png" alt="">
+</figure>
+<mat-progress-bar *ngIf="isLoading"
+          class="example-margin"
+          [color]="accent"
+          mode="indeterminate">
+      </mat-progress-bar>
+      <div *ngIf="!isLoading">
+          <h3>
+              {{ pokemonIdentity?.name }}
+            </h3>
+            <ul>
+              <li>
+                <span>Altura</span>
+                <span class="badge">{{ pokemonIdentity?.height }}</span>
+              </li>
+              <li>
+                <span>Peso:</span>
+                <span class="badge">{{ pokemonIdentity?.weight }}</span>
+              </li>
+            </ul>
+      </div>
+

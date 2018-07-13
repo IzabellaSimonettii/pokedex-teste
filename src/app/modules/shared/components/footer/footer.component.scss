@@ -1,5 +1,8 @@
-@import 'variables';
-
 footer {
-  background-color: $color-primary-light-gray;
+  background-color: #ff2525;
+  padding: 20px 0;
+  p {
+    color: #fff;
+    margin: 0;
+  }
 }

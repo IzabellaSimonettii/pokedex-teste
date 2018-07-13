@@ -1,0 +1,13 @@
+<h3>
+  Habilidades
+</h3>
+<mat-progress-bar *ngIf="isLoading"
+          class="example-margin"
+          [color]="accent"
+          mode="indeterminate">
+      </mat-progress-bar>
+<div *ngIf="pokemonAbilities.length && !isLoading" [@listState]="pokemonAbilities.length">
+  <p *ngFor="let ability of pokemonAbilities" class="badge">
+    {{ ability.ability.name }}
+   </p>
+</div>

@@ -1,0 +1,11 @@
+<h3>Tipos</h3>
+<mat-progress-bar *ngIf="isLoading"
+          class="example-margin"
+          [color]="accent"
+          mode="indeterminate">
+      </mat-progress-bar>
+<div *ngIf="pokemonTypes.length || !isLoading" [@listState]="pokemonTypes.length">
+  <p *ngFor="let type of pokemonTypes" class="badge">
+    {{ type.type.name }}
+  </p>
+</div>

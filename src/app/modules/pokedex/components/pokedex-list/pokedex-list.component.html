@@ -1,3 +1,25 @@
-<p>
-  pokedex-list works!
-</p>
+<div class="container">
+  <div class="row" *ngIf="isLoading">
+    <div class="col-12">
+      <mat-spinner></mat-spinner>
+    </div>
+  </div>
+  <div class="row" *ngIf="!isLoading" [@listState]="pokemonsList?.length">
+    <div class="col-12 d-flex justify-content-end" [ngClass]="{'fixPagination': fixPagination}">
+      <p *ngIf="requestBody"> Exibindo {{ requestBody[1] - 19 }} - {{ requestBody[1] }} de {{ totalPokemons }} resultados</p>
+      <button mat-icon-button matTooltip="Página anterior" (click)="handlePrevRequest()" [disabled]="requestBody[1] < 40">
+        <i class="material-icons">
+          keyboard_arrow_left
+        </i>
+      </button>
+      <button mat-icon-button matTooltip="Proxíma página" (click)="handleNextRequest()">
+        <i class="material-icons">
+          keyboard_arrow_right
+        </i>
+      </button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3" *ngFor="let pokemon of pokemonsList; let i = index;">
+      <app-pokemon-detail [pokemon]="pokemon" [index]="i"></app-pokemon-detail>
+    </div>
+  </div>
+</div>

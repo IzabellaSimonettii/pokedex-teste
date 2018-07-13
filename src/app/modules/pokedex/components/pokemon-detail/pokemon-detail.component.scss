@@ -1,0 +1,26 @@
+:host {
+  position: relative;
+  margin-top: 80px;
+}
+
+h4 {
+  text-transform: capitalize;
+  margin: 20px 0 10px 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 35px);
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url('/assets/images/1.png');
+  background-size: cover;
+  background-position: center;
+}

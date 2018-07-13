@@ -1,0 +1,16 @@
+.fixPagination {
+  position: fixed;
+  right: 8%;
+  top: 25px;
+  z-index: 15;
+  p {
+    color: #fff;
+  }
+}
+
+button {
+  margin: -10px 10px 0 0;
+  i {
+    font-size: 44px;
+  }
+}

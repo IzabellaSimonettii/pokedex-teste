@@ -1,7 +1,26 @@
-@import 'variables';
 
 header {
-  background-color: $color-primary-dark-gray;
-  color: $color-white;
-  padding: 30px 0;
+  background-color: #ff2525;
+  color: #fff;
+  padding: 20px 0;
+  &.fixHeader {
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 10;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  ul {
+    display: flex;
+    margin: 6px 0 0 0;
+    li {
+      cursor: pointer;
+      list-style: none;
+    }
+  }
 }

@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <app-pokemon-identity [pokemonIdentity]="pokemonIdentity"></app-pokemon-identity>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6">
+            <app-pokemon-abilities [pokemonAbilities]="pokemonAbilities"></app-pokemon-abilities>
+            <app-pokemon-types [pokemonTypes]="pokemonTypes"></app-pokemon-types>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6">
+            <app-pokemon-stats [pokemonStats]="pokemonStats"></app-pokemon-stats>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

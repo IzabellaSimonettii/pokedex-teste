@@ -1,0 +1,47 @@
+app-pokemon-detail {
+  box-shadow: 0 1px 1px 1px rgba($color-black,0.2);
+
+  display: block;
+  padding: 20px 30px;
+}
+
+.badge {
+  padding:5px 8px;
+  background:#ccc;
+  border-radius: 9px;
+  text-transform: uppercase;
+  margin: 0 10px 0 0;
+  &:last-child{
+    margin: 0;
+  }
+  &.full {
+    width: 100%;
+  }
+  &.speed {
+    background-color: #7373c7;
+  }
+  &.hp {
+    background-color: #ff4545;
+  }
+  &.defense {
+    background-color: #fcff35;
+  }
+  &.special-defense {
+    background-color: #9a9c13;
+  }
+  &.attack {
+    background-color: #84e41b;
+  }
+  &.special-attack {
+    background-color: #aa2869;
+  }
+}
+
+app-pokemon-abilities,
+app-pokemon-types {
+  display: block;
+  padding-bottom:10px;
+  @media screen and (max-width: 676px) {
+    padding-bottom: 30px;
+  }
+}

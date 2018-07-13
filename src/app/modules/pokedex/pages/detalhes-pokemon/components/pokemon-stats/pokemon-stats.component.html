@@ -1,0 +1,15 @@
+<h3>
+  Status
+</h3>
+<mat-progress-bar *ngIf="isLoading" class="example-margin" [color]="accent" mode="indeterminate">
+</mat-progress-bar>
+<div>
+  <div *ngIf="pokemonStats.length || !isLoading" [@listState]="pokemonStats.length">
+    <p *ngFor="let stat of pokemonStats">
+      {{ stat.stat.name }}
+      <span class="badge full" [ngClass]="stat.stat.name">
+        {{ stat.base_stat }}
+      </span>
+    </p>
+  </div>
+</div>

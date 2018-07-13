@@ -1,0 +1,11 @@
+<div class="icon"></div>
+<h4>
+  {{ pokemon?.name }}
+</h4>
+<a mat-icon-button color="primary" [routerLink]="['detalhes', index+1]">
+    <i class="material-icons">
+        info
+    </i>
+  Ver detatalhes de
+  <span>{{ pokemonName }}</span>
+</a>
